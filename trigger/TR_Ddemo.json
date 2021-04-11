@@ -1,0 +1,25 @@
+{
+	"name": "TR_Ddemo",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "OnPremToAzure",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2021-04-09T02:35:00",
+				"endTime": "2021-04-11T22:15:00",
+				"timeZone": "Central America Standard Time"
+			}
+		}
+	}
+}

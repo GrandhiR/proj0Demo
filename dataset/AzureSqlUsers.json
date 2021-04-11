@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlUsers",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLAzure",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Users"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
