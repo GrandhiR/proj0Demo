@@ -5,8 +5,15 @@
 		"annotations": [],
 		"type": "SqlServer",
 		"typeProperties": {
-			"connectionString": "integrated security=False;data source=LAPTOP-7KCSLOG2;initial catalog=Bank;user id=sa",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwMzc5NjNmZi0yNmZlLTQ3MzItYTZmOC00MTcwZmIwNWVjNDciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"connectionString": "Integrated Security=False;Data Source=LAPTOP-7KCSLOG2;Initial Catalog=Bank;User ID=sa",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "OnPremSQL"
+			}
 		},
 		"connectVia": {
 			"referenceName": "integrationRuntime1",
