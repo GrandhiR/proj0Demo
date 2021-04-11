@@ -1,23 +1,22 @@
 {
 	"name": "LS_OnPremSqlServer",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "SqlServer",
 		"typeProperties": {
-			"connectionString": "Integrated Security=False;Data Source=LAPTOP-7KCSLOG2;Initial Catalog=Bank;User ID=sa",
-			"password": {
+			"connectionString": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
 					"referenceName": "AzureKeyVault1",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "OnPremSQL"
+				"secretName": "ConnectionString"
 			}
 		},
 		"connectVia": {
 			"referenceName": "integrationRuntime1",
 			"type": "IntegrationRuntimeReference"
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
