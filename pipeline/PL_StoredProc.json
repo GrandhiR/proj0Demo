@@ -41,7 +41,8 @@
 		],
 		"parameters": {
 			"balance": {
-				"type": "int"
+				"type": "int",
+				"defaultValue": 50000
 			},
 			"acno": {
 				"type": "int",
