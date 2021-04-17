@@ -18,7 +18,7 @@
 					"storedProcedureName": "[dbo].[sp_updateBalance]",
 					"storedProcedureParameters": {
 						"ac_no": {
-							"value": "",
+							"value": "107",
 							"type": "Int32"
 						},
 						"balance": {
