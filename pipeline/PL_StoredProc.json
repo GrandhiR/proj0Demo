@@ -22,7 +22,7 @@
 							"type": "Int32"
 						},
 						"balance": {
-							"value": "",
+							"value": null,
 							"type": "Int32"
 						}
 					}
