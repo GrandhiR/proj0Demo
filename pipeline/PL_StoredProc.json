@@ -33,6 +33,16 @@
 				}
 			}
 		],
+		"parameters": {
+			"balance": {
+				"type": "int",
+				"defaultValue": 0
+			},
+			"acno": {
+				"type": "int",
+				"defaultValue": 0
+			}
+		},
 		"annotations": []
 	}
 }
