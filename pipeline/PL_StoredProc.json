@@ -1,0 +1,38 @@
+{
+	"name": "PL_StoredProc",
+	"properties": {
+		"activities": [
+			{
+				"name": "Update balance",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "00:02:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[sp_updateBalance]",
+					"storedProcedureParameters": {
+						"ac_no": {
+							"value": "107",
+							"type": "Int32"
+						},
+						"balance": {
+							"value": "5000",
+							"type": "Int32"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_OnPremSqlServer",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": []
+	}
+}
