@@ -31,7 +31,40 @@
 							"fileExtension": ".txt"
 						}
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "RollNo__c",
+									"type": "String"
+								},
+								"sink": {
+									"name": "RollNo"
+								}
+							},
+							{
+								"source": {
+									"name": "Name",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "emailId__c",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Email Id"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
