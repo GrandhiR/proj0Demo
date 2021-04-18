@@ -1,0 +1,54 @@
+{
+	"name": "PL_StoredProc",
+	"properties": {
+		"activities": [
+			{
+				"name": "Update balance",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "00:02:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[sp_updateBalance]",
+					"storedProcedureParameters": {
+						"ac_no": {
+							"value": {
+								"value": "@pipeline().parameters.acno",
+								"type": "Expression"
+							},
+							"type": "Int32"
+						},
+						"balance": {
+							"value": {
+								"value": "@pipeline().parameters.balance",
+								"type": "Expression"
+							},
+							"type": "Int32"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_OnPremSqlServer",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"parameters": {
+			"balance": {
+				"type": "int",
+				"defaultValue": 50000
+			},
+			"acno": {
+				"type": "int",
+				"defaultValue": 0
+			}
+		},
+		"annotations": []
+	}
+}
