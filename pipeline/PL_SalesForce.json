@@ -1,0 +1,35 @@
+{
+	"name": "PL_SalesForce",
+	"properties": {
+		"activities": [
+			{
+				"name": "SalesForceToBlob",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SalesforceSource",
+						"query": "SELECT RollNo__c, Name, emailid__c FROM student__c",
+						"readBehavior": "query"
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "SalesforceObject1",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
