@@ -1,0 +1,16 @@
+{
+	"name": "SalesForce",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLAzure",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "SalesForceStudent"
+		}
+	}
+}
