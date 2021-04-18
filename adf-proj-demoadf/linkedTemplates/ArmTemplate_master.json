@@ -15,10 +15,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage'"
 		},
-		"LS_OnPremSqlServer_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'LS_OnPremSqlServer'"
-		},
 		"LS_SQLAzure_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LS_SQLAzure'"
@@ -30,6 +26,18 @@
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://vault-proj0.vault.azure.net/"
+		},
+		"LS_OnPremSqlServer_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "ConnectionString"
+		},
+		"Salesforce_properties_typeProperties_environmentUrl": {
+			"type": "string",
+			"defaultValue": "https://login.salesforce.com"
+		},
+		"Salesforce_properties_typeProperties_username": {
+			"type": "string",
+			"defaultValue": "ram@grandhi.info"
 		},
 		"containerUri": {
 			"type": "string",
@@ -67,14 +75,20 @@
 					"LS_SQLAzure_connectionString": {
 						"value": "[parameters('LS_SQLAzure_connectionString')]"
 					},
-					"LS_OnPremSqlServer_connectionString": {
-						"value": "[parameters('LS_OnPremSqlServer_connectionString')]"
-					},
 					"AzureDataLakeStorage_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage_properties_typeProperties_url')]"
 					},
 					"AzureKeyVault1_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
+					},
+					"LS_OnPremSqlServer_properties_typeProperties_connectionString_secretName": {
+						"value": "[parameters('LS_OnPremSqlServer_properties_typeProperties_connectionString_secretName')]"
+					},
+					"Salesforce_properties_typeProperties_environmentUrl": {
+						"value": "[parameters('Salesforce_properties_typeProperties_environmentUrl')]"
+					},
+					"Salesforce_properties_typeProperties_username": {
+						"value": "[parameters('Salesforce_properties_typeProperties_username')]"
 					}
 				}
 			},
