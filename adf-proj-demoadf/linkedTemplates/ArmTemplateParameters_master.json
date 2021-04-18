@@ -17,11 +17,11 @@
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"value": "https://azuredatalakepractice.dfs.core.windows.net"
 		},
-		"AzureKeyVault1_properties_typeProperties_baseUrl": {
-			"value": "https://vault-proj0.vault.azure.net/"
-		},
 		"LS_OnPremSqlServer_properties_typeProperties_connectionString_secretName": {
 			"value": "ConnectionString"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://vault-proj0.vault.azure.net/"
 		},
 		"Salesforce_properties_typeProperties_environmentUrl": {
 			"value": "https://login.salesforce.com"
