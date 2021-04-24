@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "@toLower('Country.csv')",
+					"value": "@concat(toLower('Country'),'.csv')",
 					"type": "Expression"
 				},
 				"container": "output"
