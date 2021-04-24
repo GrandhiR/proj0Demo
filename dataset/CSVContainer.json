@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "salesforce.csv",
 				"container": "output"
 			},
 			"columnDelimiter": ",",
