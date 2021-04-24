@@ -60,7 +60,8 @@
 					},
 					"fieldList": [
 						"lastModified",
-						"itemType"
+						"itemType",
+						"structure"
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
